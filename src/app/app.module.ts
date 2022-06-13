@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
@@ -13,6 +17,9 @@ import { PagesComponent } from './pages/pages.component';
 import { MediaComponent } from './media/media.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SeletonLoaderModule } from './seleton-loader/seleton-loader.module';
+import { TimlineComponent } from './timline/timline.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { SnackbarModule } from './snackbar/snackbar/snackbar.module';
 
 @NgModule({
   declarations: [
@@ -25,14 +32,20 @@ import { SeletonLoaderModule } from './seleton-loader/seleton-loader.module';
     CoupensComponent,
     PagesComponent,
     MediaComponent,
-    SettingsComponent
+    SettingsComponent,
+    TimlineComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,
+    // ToastrModule added
     AppRoutingModule,
-    SeletonLoaderModule
+    SeletonLoaderModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

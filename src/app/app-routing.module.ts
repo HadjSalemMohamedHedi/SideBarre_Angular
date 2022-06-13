@@ -8,6 +8,8 @@ import { StatisticsComponent } from './statistics/statistics.component';
 import { MediaComponent } from './media/media.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SeletonLoaderComponent } from './seleton-loader/seleton-loader.component';
+import { TimlineComponent } from './timline/timline.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'dasheboard', pathMatch:'full'},
@@ -18,7 +20,11 @@ const routes: Routes = [
   {path:'pages', component:PagesComponent},
   {path:'media', component:MediaComponent},
   {path:'settings', component:SettingsComponent},
-  {path:'seletonloader', component:SeletonLoaderComponent}
+  {path:'seletonloader', component:SeletonLoaderComponent},
+  {path:'timeline', component:TimlineComponent},
+  {path:'snackbar', component:SnackbarComponent},
+
+
 ];
 
 @NgModule({

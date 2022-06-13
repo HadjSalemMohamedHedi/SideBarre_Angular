@@ -22,29 +22,6 @@ export const navbarData = [
 
 
 {
-  routeLink: 'coupens',
-  icon: 'fa fa-tags',
-  Label: 'Coupens'
-},
-
-
-
-{
-  routeLink: 'pages',
-  icon: 'fa fa-file',
-  Label: 'Pages'
-},
-
-
-{
-  routeLink: 'media',
-  icon: 'fa fa-camera',
-  Label: 'Media'
-},
-
-
-
-{
   routeLink: 'settings',
   icon: 'fa fa-cog',
   Label: 'Settings'
@@ -54,6 +31,17 @@ export const navbarData = [
   routeLink: 'seletonloader',
   icon: 'fa fa-id-card-o',
   Label: 'Seleton Loader'
+},
+
+{
+  routeLink: 'timeline',
+  icon: 'fa fa-superpowers',
+  Label: 'TimeLine '
+},
+{
+  routeLink: 'snackbar',
+  icon: 'fa fa-stack-exchange',
+  Label: 'SnackBar '
 },
 
 
